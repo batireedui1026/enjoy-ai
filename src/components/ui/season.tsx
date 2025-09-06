@@ -18,19 +18,19 @@ const Season = () => {
             />
             <Button
               variant="default"
-              className="bg-purple-600 hover:bg-purple-700 text-white px-6"
+              className="bg-blue-400 hover:bg-blue-600 text-white px-6"
             >
               2025 оны улирал
             </Button>
           </nav>
         </div>
         <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLSf7R0At5ZsF76GhaannQ6_6O-Z-NLgZcm0rWDxqdOs2r9Q7Hw/viewform?usp=dialog"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfytlC-NO85dfbElF6tgKZhBIZo4WNJKXi4RILyYQYvkNMEjg/viewform?usp=dialog"
           target="_blank"
           rel="noopener noreferrer"
           className="px-4 py-2 rounded-lg border border-white/40 text-white bg-green-700 hover:bg-green-800 transition"
         >
-          Бүртгүүлэх
+          Хамтран ажиллах
         </a>
       </header>
       <div className="relative max-h-2/3 max-w-2xl  mx-auto h-0 pb-[30.5%] mt-15">
@@ -52,7 +52,6 @@ const Season = () => {
           fill
           className="object-cover opacity-70"
         />
-
         <div className="relative z-10 max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-2 gap-10 items-center">
           {/* Left side */}
           <div className="space-y-6 pt-5">
@@ -62,11 +61,10 @@ const Season = () => {
 
             <div className="bg-gray-100/70 p-4 w-2xl max-h-2/3 shadow-lg backdrop-blur-sm transition-opacity duration-700 ease-in-out hover:opacity-90">
               <p className="mt-4 text-gray-600 text-base transition-opacity duration-700 ease-in-out">
-                Оролцогчид энэ өндөр технологийн метрополисоор аялахдаа хурдан
-                сэтгэхүй, стратеги болон техникийн ур чадвар шаардсан сансар
-                огторгуйтай холбоотой олон даалгаврыг биелүүлэх хэрэгтэй болно.
+                Оролцогчид технологийн метрополисоор хурдан сэтгэхүй, стратеги
+                болон техникийн ур чадвар шаардсан сансар огторгуйтай холбоотой
+                олон даалгаврыг биелүүлнэ.
               </p>
-
               <div className="mt-4 flex flex-col items-center transition-opacity duration-700 ease-in-out hover:opacity-100">
                 <Image
                   src="/image/competitions2.avif"
@@ -75,12 +73,24 @@ const Season = () => {
                   alt="competitions small"
                   className="rounded-lg transition-transform duration-700 ease-in-out hover:scale-105"
                 />
-                <p className="mt-2 text-black font-semibold transition-opacity duration-700 ease-in-out">
-                  WhalesBot AI Module 5/5s <br />
-                  <span className="font-normal text-gray-600">
-                    or AI Module 1s
-                  </span>
-                </p>
+                <div className="flex gap-10">
+                  <p className="mt-2 text-black font-semibold transition-opacity duration-700 ease-in-out">
+                    WhalesBot AI Module 5/5s <br />
+                    <span className="font-normal text-gray-600">
+                      or AI Module 1s
+                    </span>
+                  </p>
+                  <a
+                    href="/files/durem.pdf"
+                    download
+                    className="inline-flex items-center justify-center gap-1 px-3 py-1  
+                    bg-gradient-to-r from-gray-600 to-green-600 
+                  text-white font-medium shadow-md hover:from-green-700 hover:to-green-700 
+                    transition-transform duration-300 hover:scale-105 rounded text-xs"
+                  >
+                    📥 Дүрэм татах
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -101,6 +111,7 @@ const Season = () => {
           </div>
         </div>
       </section>
+
       <section className="relative w-full min-h-screen bg-gradient-to-r from-purple-900 via-pink-700 to-purple-800 text-white overflow-hidden">
         {/* Background */}
         <Image
@@ -120,7 +131,7 @@ const Season = () => {
               href="https://docs.google.com/forms/d/e/1FAIpQLSf7R0At5ZsF76GhaannQ6_6O-Z-NLgZcm0rWDxqdOs2r9Q7Hw/viewform?usp=dialog"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 rounded-lg border border-white/40 text-white bg-blue-600 hover:bg-blue-800 transition ml-80"
+              className="px-8 py-4 rounded-lg border border-white/40 text-white bg-blue-600 hover:bg-blue-800 transition ml-96"
             >
               Бүртгүүлэх
             </a>
@@ -129,9 +140,9 @@ const Season = () => {
           <div className="space-y-6 pt-24">
             <div className="bg-gray-100/70 p-4 w-2xl max-h-2/3 shadow-lg backdrop-blur-sm transition-opacity duration-700 ease-in-out hover:opacity-90">
               <p className="mt-4 text-gray-600 text-base transition-opacity duration-700 ease-in-out">
-                Хоёр баг – Улбар шар ба Цэнхэр – бие биетэйгээ өрсөлдөн,
-                өөрсдийн овгоо хамгаалан ялалт байгуулах өндөр эрсдэлтэй
-                тэмцээн.
+                Хоёр баг нь Улбар шар ба Цэнхэр гэсэн баг болж бие биетэйгээ
+                өрсөлдөн, өөрсдийн талбайгаа хамгаалан ялалт байгуулахын төлөө
+                өрсөлдөх тэмцээн
               </p>
               <div className="mt-4 flex flex-col items-center transition-opacity duration-700 ease-in-out hover:opacity-100">
                 <Image
@@ -141,17 +152,30 @@ const Season = () => {
                   alt="competitions small"
                   className="rounded-lg transition-transform duration-700 ease-in-out hover:scale-105"
                 />
-                <p className="mt-2 text-black font-semibold transition-opacity duration-700 ease-in-out">
-                  WhalesBot AI Module 5/5s <br />
-                  <span className="font-normal text-gray-600">
-                    or AI Module 1s
-                  </span>
-                </p>
+                <div className="flex gap-10 ">
+                  <p className="mt-2 text-black font-semibold transition-opacity duration-700 ease-in-out">
+                    WhalesBot AI Module 5/5s <br />
+                    <span className="font-normal text-gray-600">
+                      or AI Module 1s
+                    </span>
+                  </p>
+                  <a
+                    href="/files/durem.pdf"
+                    download
+                    className="inline-flex items-center justify-center gap-2 px-5  
+                   bg-gradient-to-r from-gray-600 to-green-600 
+                  text-white font-semibold shadow-lg hover:from-green-700 hover:to-green-700 
+                    transition-transform duration-300 hover:scale-105 rounded text-sm"
+                  >
+                    📥 Дүрэм татах
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
       <section className="relative w-full min-h-screen bg-gradient-to-r from-purple-900 via-pink-700 to-purple-800 text-white overflow-hidden">
         {/* Background */}
         <Image
@@ -166,8 +190,8 @@ const Season = () => {
           <div className="space-y-6 pt-24">
             <div className="bg-gray-100/70 p-4 w-2xl max-h-2/3 shadow-lg backdrop-blur-sm transition-opacity duration-700 ease-in-out hover:opacity-90">
               <p className="mt-4 text-gray-600 text-base transition-opacity duration-700 ease-in-out">
-                Багийн хамтаар ажилласнаар та ойн нууцыг тайлж, замдаа
-                сонирхолтой бэлэг, гайхалтай зүйлсийг нээн илрүүлнэ.
+                Багууд ойн нууцыг тайлж, аяллын турш сонирхолтой бэлэг,
+                гайхалтай зүйлсийг нээнэ.
               </p>
               <div className="mt-4 flex flex-col items-center transition-opacity duration-700 ease-in-out hover:opacity-100">
                 <Image
@@ -177,12 +201,24 @@ const Season = () => {
                   alt="competitions small"
                   className="rounded-lg transition-transform duration-700 ease-in-out hover:scale-105"
                 />
-                <p className="mt-2 text-black font-semibold transition-opacity duration-700 ease-in-out">
-                  WhalesBot AI Module 5/5s <br />
-                  <span className="font-normal text-gray-600">
-                    or AI Module 1s
-                  </span>
-                </p>
+                <div className="flex gap-10 mt-2">
+                  <p className="mt-2 text-black font-semibold transition-opacity duration-700 ease-in-out">
+                    WhalesBot AI Module 5/5s <br />
+                    <span className="font-normal text-gray-600">
+                      or AI Module 1s
+                    </span>
+                  </p>
+                  <a
+                    href="/files/durem.pdf"
+                    download
+                    className="inline-flex items-center justify-center gap-2 px-5  
+                  bg-gradient-to-r from-gray-600 to-green-600 
+                text-white font-semibold shadow-lg hover:from-green-700 hover:to-green-700 
+                transition-transform duration-300 hover:scale-105 rounded text-sm"
+                  >
+                    📥 Дүрэм татах
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -196,13 +232,14 @@ const Season = () => {
               href="https://docs.google.com/forms/d/e/1FAIpQLSf7R0At5ZsF76GhaannQ6_6O-Z-NLgZcm0rWDxqdOs2r9Q7Hw/viewform?usp=dialog"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 rounded-lg border border-white/40 text-white bg-blue-600 hover:bg-blue-800 transition mr-60"
+              className="px-8 py-4 rounded-lg border border-white/40 text-white bg-blue-600 hover:bg-blue-800 transition mr-80"
             >
               Бүртгүүлэх
             </a>
           </div>
         </div>
       </section>
+
       <section className="relative w-full min-h-screen bg-gradient-to-r from-purple-900 via-pink-700 to-purple-800 text-white overflow-hidden">
         {/* Background */}
         <Image
@@ -223,7 +260,7 @@ const Season = () => {
               href="https://docs.google.com/forms/d/e/1FAIpQLSf7R0At5ZsF76GhaannQ6_6O-Z-NLgZcm0rWDxqdOs2r9Q7Hw/viewform?usp=dialog"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 rounded-lg border border-white/40 text-white bg-blue-700 hover:bg-blue-800 transition ml-80"
+              className="px-8 py-4 rounded-lg border border-white/40 text-white bg-blue-700 hover:bg-blue-800 transition ml-96"
             >
               Бүртгүүлэх
             </a>
@@ -233,9 +270,8 @@ const Season = () => {
             <div className="space-y-6 pt-24">
               <div className="bg-gray-100/70 p-4 w-2xl max-h-2/3 shadow-lg backdrop-blur-sm transition-opacity duration-700 ease-in-out hover:opacity-90">
                 <p className="mt-4 text-gray-600 text-base transition-opacity duration-700 ease-in-out">
-                  Энэ бол Eagle дрон тэмцээн бөгөөд оюутнууд дүрс таних болон
-                  программчилсан удирдлага зэрэг олон төрлийн технологийг бүрэн
-                  дүүрэн ашиглах шаардлагатай.
+                  Eagle дрон тэмцээнд сурагчид дүрс таних болон программчилсан
+                  удирдлага зэрэг технологийг бүрэн ашиглан өрсөлдөнө.
                 </p>
                 <div className="mt-4 flex flex-col items-center transition-opacity duration-700 ease-in-out hover:opacity-100">
                   <Image
@@ -245,12 +281,24 @@ const Season = () => {
                     alt="competitions small"
                     className="rounded-lg transition-transform duration-700 ease-in-out hover:scale-105"
                   />
-                  <p className="mt-2 text-black font-semibold transition-opacity duration-700 ease-in-out">
-                    WhalesBot AI Module 5/5s <br />
-                    <span className="font-normal text-gray-600">
-                      or AI Module 1s
-                    </span>
-                  </p>
+                  <div className="flex gap-10">
+                    <p className="mt-2 text-black font-semibold transition-opacity duration-700 ease-in-out">
+                      WhalesBot AI Module 5/5s <br />
+                      <span className="font-normal text-gray-600">
+                        or AI Module 1s
+                      </span>
+                    </p>
+                    <a
+                      href="/files/durem.pdf"
+                      download
+                      className="inline-flex items-center justify-center gap-2 px-5  
+                    bg-gradient-to-r from-gray-600 to-green-600 
+                    text-white font-semibold shadow-lg hover:from-green-700 hover:to-green-700 
+                    transition-transform duration-300 hover:scale-105 rounded text-sm"
+                    >
+                      📥 Дүрэм татах
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -282,7 +330,7 @@ const Season = () => {
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-4">
               <a
-                href="#"
+                href="https://www.facebook.com/steam.mn"
                 className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors"
               >
                 <Facebook className="w-5 h-5 text-gray-600" />
