@@ -18,7 +18,7 @@ const Footer = () => {
                 </svg>
               </div>
             </div>
-            <span className="italic text-xl font-bold bg-gradient-to-r from-purple-500 to-purple-700 bg-clip-text text-transparent md:text-3xl">
+            <span className="italic text-xl md:text-2xl font-semibold text-gray-800 tracking-wide drop-shadow-sm">
               Chasing The Stars
             </span>
           </div>
