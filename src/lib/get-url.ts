@@ -5,7 +5,7 @@ export const getUrl = () => {
   //   window.location.protocol + "//" + window.location.hostname + ":8001/api/v1"
   // );
   return (
-    "Enjoyai-backend-env.eba-f5a4zymk.ap-southeast-1.elasticbeanstalk.com " +
+    "http://enjoyai-backend-env.eba-f5a4zymk.ap-southeast-1.elasticbeanstalk.com/ " +
     "/api/v1"
   );
 };
