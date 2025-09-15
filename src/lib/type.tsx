@@ -2,7 +2,7 @@ export type ClassData = {
   _id: string;
   name: string;
   studentNumber: number;
-  amoun: number;
+  amount: number;
   ageLimitMin: number;
   ageLimitMax: number;
 };

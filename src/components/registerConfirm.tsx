@@ -2,7 +2,7 @@
 import { getUrl } from "@/lib/get-url";
 import { ClassData, FormValue } from "@/lib/type";
 import axios from "axios";
-import { BookOpen } from "lucide-react";
+import { BookOpen, Wallet } from "lucide-react";
 import { useState } from "react";
 import Image from "next/image";
 import CountdownTimer from "../components/countdown-timer";
@@ -86,7 +86,7 @@ export default function RegisterConfirm({
           location: form.location,
           schoolName: form.schoolName,
           teamName: form.teamName,
-          firstNamess: form.firstNames,
+          firstNames: form.firstNames,
           lastNames: form.lastNames,
           teacherName: form.teacherName,
           ages: form.ages,
@@ -147,6 +147,17 @@ export default function RegisterConfirm({
                   <p className="text-green-600 font-semibold text-base">
                     {selectedClass.name}
                   </p>
+                </div>
+              </div>
+              <div className="flex items-center gap-3 p-3 rounded-2xl bg-green-50 shadow-sm">
+                <Wallet className="text-green-600 w-6 h-6" />
+                <div>
+                  <p className="text-gray-600 text-sm font-medium">
+                    Нэг хүүхдийн тэмцээний хураамж
+                  </p>
+                  <span className="block text-lg font-bold text-green-700">
+                    35,000₮
+                  </span>
                 </div>
               </div>
             </div>
