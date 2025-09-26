@@ -121,7 +121,7 @@ export default function RegistrationForm() {
             <div className="my-2">
               <Image
                 className="bg-cover"
-                src="/image/logos.png"
+                src="/image/enjoy.jpeg"
                 alt="unitelhub"
                 width={750}
                 height={600}
@@ -316,7 +316,7 @@ export default function RegistrationForm() {
                   className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-green-500"
                 >
                   <option value="">Нас сонгох</option>
-                  {[...Array(9)].map((_, i) => (
+                  {[...Array(12)].map((_, i) => (
                     <option key={i} value={(i + 6).toString()}>
                       {i + 6}
                     </option>

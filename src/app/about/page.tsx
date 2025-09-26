@@ -36,41 +36,17 @@ const Page = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative w-full bg-gradient-to-r from-purple-500 to-indigo-600 overflow-hidden">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-6 py-20 md:py-32 flex flex-col md:flex-row items-center justify-between relative z-10">
-          <div className="text-center md:text-left md:w-1/2">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white leading-tight drop-shadow-lg">
-              ENJOY AI,
-              <br />I ENJOY...!
-            </h1>
-          </div>
-
-          {/* Hero Image */}
-          {/* <div className="md:w-1/2 mt-10 md:mt-0 flex justify-center md:justify-end">
-            <img
-              src="/hero-image.png"
-              alt="AI Illustration"
-              className="w-80 md:w-full max-w-md animate-float"
-            />
-          </div> */}
+      <div>
+        <div className="my-2">
+          <Image
+            className="bg-cover w-full h-full"
+            src="/image/enjoy.jpeg"
+            alt="enjoy.jpeg"
+            width={750}
+            height={600}
+          />
         </div>
-        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
-          <svg
-            viewBox="0 0 500 150"
-            preserveAspectRatio="none"
-            className="w-full h-32"
-          >
-            <path
-              d="M0,49.98 C150,150 349.81,-50 500,49.98 L500,150 L0,150 Z"
-              className="fill-white"
-            />
-          </svg>
-        </div>
-        <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
-          <div className="absolute w-72 h-72 bg-purple-300 rounded-full opacity-30 -top-16 -left-16 animate-pulse-slow"></div>
-          <div className="absolute w-48 h-48 bg-indigo-400 rounded-full opacity-20 -bottom-16 -right-16 animate-pulse-slow"></div>
-        </div>
-      </section>
+      </div>
       <div className="flex flex-wrap justify-center gap-4 sm:gap-6 py-8 px-4 sm:px-6">
         {stats.map((stat, index) => (
           <div
@@ -85,6 +61,17 @@ const Page = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div>
+        <div className="my-2">
+          <Image
+            className="bg-cover w-full md:w-[70%] mx-auto"
+            src="/image/screenshot4.png"
+            alt="screenshot"
+            width={750}
+            height={600}
+          />
+        </div>
       </div>
       <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8 px-4 sm:px-8 md:px-0 my-8">
         <div className="md:w-1/2 flex justify-center">
@@ -120,12 +107,11 @@ const Page = () => {
             Бидний эрхэм зорилго
           </h3>
           <p className="text-gray-700 text-base sm:text-lg md:text-lg leading-relaxed">
-            Хиймэл оюун ухаан, робот техникийн боловсролыг бүх насны оюутнуудад
-            хүртээмжтэй, сонирхолтой, үр дүнтэй болгох. Бид урам зоригтой
-            тэмцээн уралдаан, сорилт сорилт, суралцах туршлагыг бий болгосноороо
-            хиймэл оюун ухаанд суурилсан ирээдүйд амжилтанд хүрэхэд шаардлагатай
-            мэдлэг, ур чадвар, бүтээлч сэтгэлгээгээр залуу оюун ухааныг
-            төлөвшүүлэхийг зорьж байна.
+            Хиймэл оюун ухаан болон роботын боловсролыг бүх насны сурагчдад
+            хүртээмжтэй, сонирхолтой, үр өгөөжтэй болгох тэдэнд урам зориг өгөх.
+            Тэмцээн, сорилт, суралцах шинэлэг туршлагуудыг бий болгох замаар
+            залуу үеийнхнийг хиймэл оюун ухаанд суурилсан ирээдүйд шаардлагатай
+            мэдлэг, ур чадвар, бүтээлч сэтгэлгээнд сургахыг бид зорино.
           </p>
         </div>
         <div className="md:w-1/2 flex justify-center mt-4 md:mt-0">
@@ -192,6 +178,39 @@ const Page = () => {
           <span className="pt-2 text-purple-600 font-semibold">
             - Дасгалжуулагч, Гана
           </span>
+        </div>
+      </div>
+      <div>
+        <div className="my-2">
+          <Image
+            className="bg-cover w-full md:w-[80%] mx-auto"
+            src="/image/screenshot.png"
+            alt="screenshot"
+            width={750}
+            height={600}
+          />
+        </div>
+      </div>
+      <div>
+        <div className="my-2">
+          <Image
+            className="bg-cover w-full md:w-[70%] mx-auto"
+            src="/image/screenshot3.png"
+            alt="screenshot"
+            width={750}
+            height={600}
+          />
+        </div>
+      </div>
+      <div>
+        <div className="my-2">
+          <Image
+            className="bg-cover w-full md:w-[80%] mx-auto"
+            src="/image/screenshot2.png"
+            alt="screenshot"
+            width={750}
+            height={600}
+          />
         </div>
       </div>
 
