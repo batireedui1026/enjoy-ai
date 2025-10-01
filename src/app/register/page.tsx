@@ -176,7 +176,7 @@ export default function RegistrationForm() {
                   }}
                   className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-green-500"
                 >
-                  <option value="">Аймаг сонгоно уу</option>
+                  <option value="">Байршил сонгоно уу</option>
                   {provinceData.map(({ _id, name }) => (
                     <option key={_id} value={_id}>
                       {name}
