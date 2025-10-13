@@ -7,7 +7,7 @@ import { Menu, X } from "lucide-react";
 
 const Header = () => {
   const router = useRouter();
-  const pathname = usePathname(); // Одоогийн зам
+  const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
 
   const links = [
@@ -34,7 +34,6 @@ const Header = () => {
             />
           </div>
 
-          {/* Desktop Nav */}
           <nav className="hidden md:flex items-center space-x-6">
             {links.map((link) => (
               <Link
@@ -53,17 +52,15 @@ const Header = () => {
           </nav>
         </div>
 
-        {/* Register Button (Desktop) */}
         <div className="hidden md:block">
           <button
-            onClick={() => router.push("/register")}
+            onClick={() => router.push("/closed")}
             className="px-6 py-2 rounded-lg border border-white/40 text-white bg-blue-600 hover:bg-blue-800 transition text-sm md:text-base"
           >
             Бүртгүүлэх
           </button>
         </div>
 
-        {/* Mobile Menu Button */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="md:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100"
@@ -72,7 +69,6 @@ const Header = () => {
         </button>
       </div>
 
-      {/* Mobile Dropdown */}
       {menuOpen && (
         <div className="md:hidden flex flex-col space-y-3 px-4 pb-4 bg-white shadow-md">
           {links.map((link) => (

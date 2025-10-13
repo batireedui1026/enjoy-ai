@@ -179,7 +179,7 @@ const Season = () => {
               </ul>
             </div>
             <button
-              onClick={() => router.push("/register")}
+              onClick={() => router.push("/closed")}
               className="px-6 py-3 rounded-lg border border-white/40 text-white bg-blue-600 hover:bg-blue-800 transition text-sm md:text-base md:px-8 md:py-4 order-3 md:mr-96"
             >
               Бүртгүүлэх
@@ -342,7 +342,7 @@ const Season = () => {
               </ul>
             </div>
             <button
-              onClick={() => router.push("/register")}
+              onClick={() => router.push("/closed")}
               className="px-6 py-3 rounded-lg border border-white/40 text-white bg-blue-600 hover:bg-blue-800 transition text-sm md:text-base md:px-8 md:py-4 order-3 md:ml-96"
             >
               Бүртгүүлэх
@@ -505,7 +505,7 @@ const Season = () => {
               </ul>
             </div>
             <button
-              onClick={() => router.push("/register")}
+              onClick={() => router.push("/closed")}
               className="px-6 py-3 rounded-lg border border-white/40 text-white bg-blue-600 hover:bg-blue-800 transition text-sm md:text-base md:px-8 md:py-4 order-3 md:mr-96"
             >
               Бүртгүүлэх
